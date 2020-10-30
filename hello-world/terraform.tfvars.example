@@ -1,0 +1,11 @@
+name = "hello_world"
+# region = "us-east-2"
+# profile = "default"
+
+# instance_type = "t2.micro"
+# instance_type = "c5.large"
+
+# public_key = ""
+# aws_access_key = ""
+# aws_secret_key = ""
+

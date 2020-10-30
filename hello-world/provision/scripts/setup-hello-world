@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+set -euEo pipefail
+
+#
+# Environment
+#   $HELLO_WORLD_FROM
+#
+
+cd ~/hello-world
+
+echo "Hello World from ${HELLO_WORLD_FROM}"
+
+cat <<EOF >.env
+MESSAGE='Hello World from ${HELLO_WORLD_FROM}'
+EOF
+
+docker-compose up -d
