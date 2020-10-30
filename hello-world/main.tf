@@ -116,7 +116,7 @@ resource "aws_instance" "instance" {
       <<-EOT
         chmod +x /tmp/scripts/setup-hello-world
         HELLO_WORLD_FROM="${var.hello_world_from}" \
-        /tmp/scripts/setup-hello-world
+        /tmp/scripts/setup-openvpn-ssserver
       EOT
     ]
   }
