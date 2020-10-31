@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+#
+# Environment:
+#   $VAR1
+#
+set -euEo pipefail
+
+# cd ~/data/docker/___
+
+# sudo apt-get update -y
+# sudo apt-get install -y ___
