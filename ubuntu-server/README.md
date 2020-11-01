@@ -1,8 +1,8 @@
-# vpn-proxy-aws
+# ubuntu-server
 
 ## Overview
 
-Setup ec2 instance with openvpn+shadowsocks server &amp; squid http proxy
+ubuntu server instance
 
 ## Usage
 
