@@ -30,22 +30,16 @@ terraform apply
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
 | amis | n/a | `map(string)` | <pre>{<br>  "us-east-2": "ami-01237fce26136c8cc"<br>}</pre> | no |
+| instance\_count | n/a | `number` | `1` | no |
 | instance\_type | n/a | `string` | `"t2.micro"` | no |
-| openvpn\_client\_name | n/a | `string` | `"vpn-profile"` | no |
-| openvpn\_port | n/a | `number` | `1194` | no |
+| name | n/a | `string` | n/a | yes |
+| profile | n/a | `string` | `"default"` | no |
 | region | n/a | `string` | `"us-east-2"` | no |
-| squid\_password | n/a | `string` | n/a | yes |
-| squid\_port | n/a | `number` | `3128` | no |
-| squid\_user | n/a | `string` | n/a | yes |
+| server\_port | n/a | `number` | n/a | yes |
 
 ## Outputs
 
-| Name | Description |
-|------|-------------|
-| closing\_message | n/a |
-| proxy\_usage | n/a |
-| ssh\_to\_server | n/a |
-| vpn\_usage | n/a |
+No output.
 
 <!-- END OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
 

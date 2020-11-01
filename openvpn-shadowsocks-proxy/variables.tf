@@ -30,9 +30,9 @@ variable "amis" {
 }
 
 variable "disable_termination" {
-  type = bool
+  type        = bool
   description = "disable instance termination"
-  default = false
+  default     = false
 }
 
 # variable "public_key" {

@@ -10,3 +10,5 @@ brew install pre-commit
 brew install tflint
 brew install shfmt
 brew install shellcheck
+
+sudo apt install -y git-crypt
