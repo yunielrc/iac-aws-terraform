@@ -1,9 +1,10 @@
 # Local .terraform directories
 **/.terraform/*
 
-# .tfstate files
-*.tfstate
-*.tfstate.*
+# .tfstate files (encripted by git-crypt)
+# *.tfstate
+# *.tfstate.*
+*.tfstate.backup
 
 # Crash log files
 crash.log
@@ -13,7 +14,8 @@ crash.log
 # control as they are data points which are potentially sensitive and subject
 # to change depending on the environment.
 #
-*.tfvars
+# (encripted by git-crypt)
+# *.tfvars
 
 # Ignore override files as they are usually used to override resources locally and so
 # are not checked in
