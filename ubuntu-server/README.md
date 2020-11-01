@@ -2,7 +2,7 @@
 
 ## Overview
 
-Setup ec2 instance with openvpn &amp; squid http proxy
+Setup ec2 instance with openvpn+shadowsocks server &amp; squid http proxy
 
 ## Usage
 
@@ -12,30 +12,31 @@ terraform apply
 ```
 
 <!-- BEGINNING OF PRE-COMMIT-TERRAFORM DOCS HOOK -->
+
 ## Requirements
 
-| Name | Version |
-|------|---------|
+| Name      | Version |
+| --------- | ------- |
 | terraform | >= 0.13 |
-| aws | >= 3.10 |
+| aws       | >= 3.10 |
 
 ## Providers
 
 | Name | Version |
-|------|---------|
-| aws | >= 3.10 |
+| ---- | ------- |
+| aws  | >= 3.10 |
 
 ## Inputs
 
-| Name | Description | Type | Default | Required |
-|------|-------------|------|---------|:--------:|
-| amis | n/a | `map(string)` | <pre>{<br>  "us-east-2": "ami-01237fce26136c8cc"<br>}</pre> | no |
-| instance\_count | n/a | `number` | `1` | no |
-| instance\_type | n/a | `string` | `"t2.micro"` | no |
-| name | n/a | `string` | n/a | yes |
-| profile | n/a | `string` | `"default"` | no |
-| region | n/a | `string` | `"us-east-2"` | no |
-| server\_port | n/a | `number` | n/a | yes |
+| Name           | Description | Type          | Default                                                    | Required |
+| -------------- | ----------- | ------------- | ---------------------------------------------------------- | :------: |
+| amis           | n/a         | `map(string)` | <pre>{<br> "us-east-2": "ami-01237fce26136c8cc"<br>}</pre> |    no    |
+| instance_count | n/a         | `number`      | `1`                                                        |    no    |
+| instance_type  | n/a         | `string`      | `"t2.micro"`                                               |    no    |
+| name           | n/a         | `string`      | n/a                                                        |   yes    |
+| profile        | n/a         | `string`      | `"default"`                                                |    no    |
+| region         | n/a         | `string`      | `"us-east-2"`                                              |    no    |
+| server_port    | n/a         | `number`      | n/a                                                        |   yes    |
 
 ## Outputs
 
