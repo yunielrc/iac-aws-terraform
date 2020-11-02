@@ -1,4 +1,4 @@
-# vpn-proxy-aws
+# openvpn-shadowsocks-proxy
 
 ## Overview
 

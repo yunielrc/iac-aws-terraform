@@ -1,7 +1,7 @@
 {
   "cSpell.enabled": false,
   "files.exclude": {
-    "**/*.tfstate*": false,
+    "**/*.tfstate*": true,
     "**/.terraform": true
   },
   "DockerRun.DisableAutoGenerateConfig": true

@@ -1,0 +1,11 @@
+name = "openvpn-shadowsocks-proxy"
+
+# SQUID
+squid_port     = <squid_port>
+squid_user     = "<squid_user>"
+squid_password = "<squid_password>"
+
+# SHADOWSOCKS (SS) SERVER
+ss_client_port = <ss_client_port>
+ss_port        = <ss_port>
+ss_password    = "<ss_password>"
