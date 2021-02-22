@@ -2,7 +2,6 @@ variable "name" {
   type        = string
   description = "project name, resources prefix, instance tag Name"
 }
-
 variable "region" {
   default     = "us-east-2"
   description = "aws instance region"

@@ -25,6 +25,14 @@ resource "aws_security_group" "security_group" {
 
   ingress {
     description = "ss server tcp"
+    from_port   = 443
+    to_port     = 443
+    protocol    = "tcp"
+    cidr_blocks = local.cidr_blocks
+  }
+
+  ingress {
+    description = "ss server tcp"
     from_port   = var.ss_port
     to_port     = var.ss_port
     protocol    = "tcp"
@@ -129,7 +137,9 @@ resource "aws_instance" "instance" {
           SS_CLIENT_PORT=${var.ss_client_port} \
           SS_PORT=${var.ss_port} \
           SS_PASSWORD=${var.ss_password} \
+          SS_HOST=ssserver-us \
           OPENVPN_CLIENT_NAME=${var.openvpn_client_name} \
+          OPENVPN_HOST=openvpn-us \
           bash
       EOT
       ,
